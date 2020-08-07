@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">WTE</string>
+    <string name="pin_number">Pin Number</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+
+    <string name="sex">What Is Your Sex</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="other">Other</string>
+
+    <string name="bmi_">BMI Calculator</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="bmi">BMI</string>
+
+    <string name="security_question">Security Question</string>
+    <string name="secret_question1">What was a name you gave yourself growing up</string>
+    <string name="secret_question2">What was your favorite game as a child?</string>
+    <string name="security_question3">Where were you when you had your first kiss?"</string>
+    <string name="security_question4">What is the name of a college you applied to but did not attend?</string>
+    <string name="security_question5">What planet would you like to live on?</string>
+    <string name="answer">Answer</string>
+
+
+    <string name="goal">Goal</string>
+    <string name="lean">Get Lean</string>
+    <string name="maintain">Maintain Weight</string>
+    <string name="bulk">Bulk Up</string>
+
+    <string name="date_time">Date</string>
+
+    <string name="new_user">New User</string>
+    <string name="existing_user">Existing User</string>
+    <string name="forgot">Forgot Or Change Password</string>
+    <string name="ok">Okay</string>
+    <string name="back">Back</string>
+    <string name="change">Change Password</string>
+    <string name="_return">Return</string>
+
+
+
+
+</resources>
