@@ -20,10 +20,9 @@
     <string name="secret_question1">What was a name you gave yourself growing up</string>
     <string name="secret_question2">What was your favorite game as a child?</string>
     <string name="security_question3">Where were you when you had your first kiss?"</string>
-    <string name="security_question4">What is the name of a college you applied to but did not attend?</string>
+    <string name="security_question4">What is the name of a college you got accepted to but did not attend?</string>
     <string name="security_question5">What planet would you like to live on?</string>
     <string name="answer">Answer</string>
-
 
     <string name="goal">Goal</string>
     <string name="lean">Get Lean</string>
@@ -39,6 +38,8 @@
     <string name="back">Back</string>
     <string name="change">Change Password</string>
     <string name="_return">Return</string>
+
+    <string name="kgSwitch">Imperial</string>
 
 
 </resources>

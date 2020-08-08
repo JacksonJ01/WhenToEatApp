@@ -19,8 +19,8 @@
 
     <Button
         android:id="@+id/sec1Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="332dp"
+        android:layout_height="52dp"
         android:layout_marginTop="30dp"
         android:text="@string/secret_question1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,8 +39,8 @@
 
     <Button
         android:id="@+id/secq3Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="329dp"
+        android:layout_height="49dp"
         android:layout_marginTop="30dp"
         android:text="@string/security_question3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,8 +49,8 @@
 
     <Button
         android:id="@+id/secq4Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
         android:layout_marginTop="30dp"
         android:text="@string/security_question4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,8 +59,8 @@
 
     <Button
         android:id="@+id/secq5Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="326dp"
+        android:layout_height="49dp"
         android:layout_marginTop="30dp"
         android:text="@string/security_question5"
         app:layout_constraintEnd_toEndOf="parent"

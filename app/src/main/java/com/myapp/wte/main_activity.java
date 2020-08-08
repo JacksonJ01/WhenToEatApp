@@ -26,7 +26,7 @@ public class main_activity extends AppCompatActivity {
                 EditText firstNameEditText = findViewById(R.id.firstNameEditText);
                 EditText lastNameEditText = findViewById(R.id.lastNameTextEdit);
 
-                String changePassword = loginPasswordEditText.getText().toString();
+                String pinNumber = loginPasswordEditText.getText().toString();
                 String firstName = firstNameEditText.getText().toString();
                 String lastName = lastNameEditText.getText().toString();
 

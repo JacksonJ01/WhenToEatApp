@@ -33,14 +33,14 @@
         android:id="@+id/bmiWeightEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/weight"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bmiTv"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/bmiKgSwitch" />
 
     <EditText
         android:id="@+id/bmiHeightEditText"
@@ -54,4 +54,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bmiWeightEditText"
         android:autofillHints="" />
+
+    <Switch
+        android:id="@+id/bmiKgSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/kgSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bmiTv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

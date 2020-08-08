@@ -24,13 +24,67 @@ public class SecurityQuestion extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent answer = new Intent(getApplicationContext(), Answer.class);
+                Intent show_data = new Intent(getApplicationContext(), showData.class);
+
+                String secQ = "What was the name you gave yourself growing up?";
+                show_data.putExtra("com.myapp.wte.SecurityQuestion", secQ);
+
                 startActivity(answer);
             }
         });
 
-    }
+        secQ2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent answer = new Intent(getApplicationContext(), Answer.class);
+                Intent show_data = new Intent(getApplicationContext(), showData.class);
 
-    public static String Security_Question_String (int secQ){
-        Intent show_data = new Intent(get)
-    };
+                String secQ = "What was your favorite game as a child?";
+                show_data.putExtra("com.myapp.wte.SecurityQuestion", secQ);
+
+                startActivity(answer);
+            }
+        });
+
+        secQ3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent answer = new Intent(getApplicationContext(), Answer.class);
+                Intent show_data = new Intent(getApplicationContext(), showData.class);
+
+                String secQ = "Where were you when you had your first kiss?";
+                show_data.putExtra("com.myapp.wte.SecurityQuestion", secQ);
+
+                startActivity(answer);
+            }
+        });
+
+        secQ4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent answer = new Intent(getApplicationContext(), Answer.class);
+                Intent show_data = new Intent(getApplicationContext(), showData.class);
+
+                String secQ = "What the name of a college you got accepted to but did not attend?";
+                show_data.putExtra("com.myapp.wte.SecurityQuestion", secQ);
+
+                startActivity(answer);
+            }
+        });
+
+        secQ5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent answer = new Intent(getApplicationContext(), Answer.class);
+                Intent show_data = new Intent(getApplicationContext(), showData.class);
+
+                String secQ = "What planet would you like to live on?";
+                show_data.putExtra("com.myapp.wte.SecurityQuestion", secQ);
+
+                startActivity(answer);
+            }
+        });
+
+
+    }
 }
