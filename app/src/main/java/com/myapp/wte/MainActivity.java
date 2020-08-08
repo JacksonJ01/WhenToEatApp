@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
         newUserBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent new_User = new Intent(getApplicationContext(), newUser.class);
+                startActivity(new_User);
             }
         });
 

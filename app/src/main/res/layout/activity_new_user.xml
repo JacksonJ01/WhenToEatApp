@@ -4,76 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".newUser">
 
-    <EditText
-        android:id="@+id/loginPasswordEditText"
+    <TextView
+        android:id="@+id/newUserTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
-        android:ems="10"
-        android:hint="@string/pin_number"
-        android:importantForAutofill="no"
-        android:inputType="numberPassword"
+        android:layout_marginTop="60dp"
+        android:text="@string/new_user"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/firstNameEditText"
+        android:id="@+id/nUfirstNameEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="First Name"
+        android:hint="@string/first_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginPasswordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/nUPinNumberEditText"
         android:autofillHints="" />
 
     <EditText
-        android:id="@+id/lastNameTextEdit"
+        android:id="@+id/nUPinNumberEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Last Name"
+        android:hint="@string/pin_number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newUserTv"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/nUlastNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/last_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/firstNameEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/nUfirstNameEditText"
+        android:autofillHints="" />
 
     <Button
-        android:id="@+id/forgotBtn"
+        android:id="@+id/nUokayBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/forgot"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/okayBtn" />
-
-    <Button
-        android:id="@+id/okayBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="@string/ok"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lastNameTextEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/nUEmailEditText" />
 
-    <Button
-        android:id="@+id/backToNewUserBtn"
+    <EditText
+        android:id="@+id/nUEmailEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/new_user"
-        android:textColor="#BF000000"
-        android:textSize="10sp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/forgotBtn" />
-
+        app:layout_constraintTop_toBottomOf="@+id/nUlastNameEditText"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>

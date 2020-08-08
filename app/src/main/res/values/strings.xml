@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WTE</string>
+    <string name="app_name">When To Eat</string>
     <string name="pin_number">Pin Number</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
@@ -39,8 +39,6 @@
     <string name="back">Back</string>
     <string name="change">Change Password</string>
     <string name="_return">Return</string>
-
-
 
 
 </resources>
