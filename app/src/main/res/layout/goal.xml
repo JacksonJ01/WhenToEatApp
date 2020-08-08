@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/goalTextEdit"
+        android:id="@+id/goalTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/leanBtn"
+        android:id="@+id/goalLeanBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -26,10 +26,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/goalTextEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/goalTv" />
 
     <Button
-        android:id="@+id/maintainBtn"
+        android:id="@+id/goalMaintainBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -37,10 +37,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leanBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/goalLeanBtn" />
 
     <Button
-        android:id="@+id/bulkBtn"
+        android:id="@+id/goalBulkBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -49,5 +49,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maintainBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/goalMaintainBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

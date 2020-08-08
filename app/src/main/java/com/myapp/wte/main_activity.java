@@ -30,6 +30,9 @@ public class main_activity extends AppCompatActivity {
                 String firstName = firstNameEditText.getText().toString();
                 String lastName = lastNameEditText.getText().toString();
 
+                Intent instruct = new Intent(getApplicationContext(), Instruction.class);
+                startActivity(instruct);
+
             }
         });
 

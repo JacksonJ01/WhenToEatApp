@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/maleEditText"
+        android:id="@+id/sexMaleEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
@@ -18,7 +18,7 @@
         app:layout_constraintTop_toBottomOf="@+id/sexTv" />
 
     <Button
-        android:id="@+id/femaleEditText"
+        android:id="@+id/sexFemaleEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -26,10 +26,10 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maleEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/sexMaleEditText" />
 
     <Button
-        android:id="@+id/interEditText"
+        android:id="@+id/sexInterEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -37,19 +37,19 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/femaleEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/sexFemaleEditText" />
 
     <EditText
-        android:id="@+id/otherEditText"
+        android:id="@+id/sexOtherEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:hint="@string/other"
         android:inputType="textPersonName"
-        android:text="@string/other"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/interEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/sexInterEditText" />
 
     <TextView
         android:id="@+id/sexTv"
@@ -63,7 +63,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/sokayBtn"
+        android:id="@+id/sexOkayBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -71,5 +71,5 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otherEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/sexOtherEditText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

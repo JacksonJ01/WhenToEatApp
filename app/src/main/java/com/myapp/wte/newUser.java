@@ -16,6 +16,8 @@ public class newUser extends AppCompatActivity {
         setContentView(R.layout.activity_new_user);
 
         Button nUOkayBtn = findViewById(R.id.nUokayBtn);
+        Button nUBackBtn = findViewById(R.id.nUBackBtn);
+
         nUOkayBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,6 +40,15 @@ public class newUser extends AppCompatActivity {
                 show_data.putExtra("com.myapp.wte.Email", email);
 
                 startActivity(secQ);
+            }
+        });
+
+        nUBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent act_main = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(act_main);
             }
         });
     }

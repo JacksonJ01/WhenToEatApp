@@ -18,7 +18,7 @@ public class BMI extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bmi);
 
-        Button bmiOkayBtn = findViewById(R.id.bmiOkayBtn);
+        final Button bmiOkayBtn = findViewById(R.id.bmiOkayBtn);
         @SuppressLint("UseSwitchCompatOrMaterialCode")
         Switch bmiKgSwitch = findViewById(R.id.bmiKgSwitch);
 
@@ -36,6 +36,9 @@ public class BMI extends AppCompatActivity {
                 show_data.putExtra("com.myapp.wte.Weight", weight);
                 show_data.putExtra("com.myapp.wte.Height", height);
                 show_data.putExtra("com.myapp.wte.BMI", bmi);
+
+                Intent sex = new Intent(getApplicationContext(), Sex.class);
+                startActivity(sex);
             }
         });
 
@@ -43,20 +46,30 @@ public class BMI extends AppCompatActivity {
         bmiKgSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean kg) {
-                EditText bmiWeightEditText = findViewById(R.id.bmiWeightEditText);
-                EditText bmiHeightEditText = findViewById(R.id.bmiHeightEditText);
-
-                float weight = Float.parseFloat(bmiWeightEditText.getText().toString());
-                float height = Float.parseFloat(bmiHeightEditText.getText().toString());
-                float bmi;
-
-                bmi = (weight / (height * height));
 
 
-                Intent show_data = new Intent(getApplicationContext(), showData.class);
-                show_data.putExtra("com.myapp.wte.Weight", weight);
-                show_data.putExtra("com.myapp.wte.Height", height);
-                show_data.putExtra("com.myapp.wte.BMI", bmi);
+                bmiOkayBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent show_data = new Intent(getApplicationContext(), showData.class);
+
+                        EditText bmiWeightEditText = findViewById(R.id.bmiWeightEditText);
+                        EditText bmiHeightEditText = findViewById(R.id.bmiHeightEditText);
+
+                        float weight = Float.parseFloat(bmiWeightEditText.getText().toString());
+                        float height = Float.parseFloat(bmiHeightEditText.getText().toString());
+                        float bmi;
+
+                        bmi = (weight / (height * height));
+                        show_data.putExtra("com.myapp.wte.Weight", weight);
+                        show_data.putExtra("com.myapp.wte.Height", height);
+                        show_data.putExtra("com.myapp.wte.BMI", bmi);
+
+                        Intent sex = new Intent(getApplicationContext(), Sex.class);
+                        startActivity(sex);
+                    }
+                });
+
             }
         });
     }

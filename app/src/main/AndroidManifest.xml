@@ -17,6 +17,11 @@
         <activity android:name=".main_activity" />
         <activity android:name=".forgot_page" />
         <activity android:name=".forgot_page2" />
+        <activity android:name=".SecurityQuestion"/>
+        <activity android:name=".Instruction"/>
+        <activity android:name=".showData"/>
+        <activity android:name=".Goal"/>
+        <activity android:name=".Sex"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
